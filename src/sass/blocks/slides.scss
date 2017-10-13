@@ -1,0 +1,25 @@
+.slides {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e1e5f1;
+}
+
+.slides__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  &::after,
+  &::before {
+    content: none;
+  }
+}
+
+.slides__img {
+  margin: 10px 5px;
+  cursor: pointer;
+
+  @include hover-effects;
+}

@@ -1,0 +1,12 @@
+.logo {
+  display: block;
+  color: $primary-color;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 auto;
+
+  font-family: $third-font-family;
+  font-size: 36px;
+  text-transform: uppercase;
+  @include hover-effects;
+}

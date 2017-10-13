@@ -1,0 +1,33 @@
+.social-icon {
+  font-size: 0;
+  display: inline-block;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/srite-socials.png");
+  border-radius: 50%;
+  @include hover-effects;
+  border: 1px solid #48a0dc;
+  border-radius: 50%;
+
+  &--facebook {
+    background-position: -70px -33px;
+  }
+  &--instagram {
+    background-position: -40px -34px;
+  }
+  &--twitter {
+    background-position: -71px -1px;
+  }
+  &--google {
+    background-position: -3px -2px;
+  }
+  &--youtube {
+    background-position: -1px -35px;
+  }
+  &--indellin {
+    background-position:  -39px -3px;
+  }
+}
