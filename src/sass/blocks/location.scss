@@ -1,0 +1,30 @@
+.location {
+
+}
+
+.location__block {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 299px;
+  background: url("../img/map-location.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0;
+}
+
+.location__marker {
+  position: absolute;
+  top: 43%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 46px;
+  height: 55px;
+  background: none;
+  border: 0;
+  outline: none;
+  font-size: 0;
+  background-image: url("../img/icons/marker.png");
+
+  @include hover-effects;
+}

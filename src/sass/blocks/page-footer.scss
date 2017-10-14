@@ -1,13 +1,45 @@
 .page-footer {
-  border-top: 1px solid #ececec;
-  margin-top: 70px;
   padding: 20px 0;
+  padding-top: 80px;
+  padding-bottom: 0;
   display: flex;
+  width: 100%;
+  background-color: #323746;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   justify-content: space-between;
 }
 
-.page-footer__copyright {
+.page-footer__copy {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #262a35;
   font-size: 13px;
   color: $secondary-font-color;
-  flex: 1;
+  margin: 0;
+  margin-top: 80px;
+  color: #8e95ac;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.page-footer__text {
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #8e95ac;
+}
+
+.social-icons--footer {
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }

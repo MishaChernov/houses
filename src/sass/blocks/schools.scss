@@ -1,0 +1,65 @@
+.schools__item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.map-flag {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%) scale(1.5);
+
+  &--green {
+    fill: #4fba6f;
+  }
+  &--blue {
+    fill: #48a0dc;
+  }
+  &--black {
+    fill: #2c3445;
+  }
+}
+
+.schools__subtitle {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+.schools__td {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+
+  &:last-child {
+    font-weight: 400;
+    padding-left: 10px;
+  }
+}
+
+.schools__map {
+  position: relative;
+  vertical-align: middle;
+  margin-top: 30px;
+  background: #eeeeee url("../img/map.jpg") no-repeat right;
+  max-width: 347px;
+  min-height: 300px;
+}
+
+.schools__marker {
+  position: absolute;
+
+  &--blue {
+    top: 150px;
+    right: 50px;
+  }
+  &--green {
+    top: 80px;
+    right: 80px;
+  }
+  &--black {
+    top: 155px;
+    right: 150px;
+  }
+}

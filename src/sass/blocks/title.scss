@@ -1,0 +1,21 @@
+.title {
+  position: relative;
+  margin-bottom: 35px;
+  font-family: $secondary-font-family;
+  color: #3a464e;
+  font-size: 24px;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: -7px;
+    display: block;
+    width: 63px;
+    height: 22px;
+    background-image: url("../img/icons/divider.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

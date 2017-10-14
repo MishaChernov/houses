@@ -9,4 +9,9 @@
   font-size: 36px;
   text-transform: uppercase;
   @include hover-effects;
+
+  &--footer {
+    color: #ffffff;
+    font-size: 24px;
+  }
 }

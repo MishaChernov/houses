@@ -1,0 +1,88 @@
+.visit {
+  position: relative;
+  margin-top: 40px;
+  background-color: $primary-color;
+  background-image: url("../img/background-visit.jpg");
+  background-repeat: no-repeat;
+  background-size: 380px 100%;
+  background-position: left;
+}
+
+.visit__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 70px 0;
+  padding-top: 20px;
+}
+
+.visit__btn {
+  position: relative;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  padding: 15px 20px;
+
+  border: none;
+  outline: none;
+  background-color: $primary-color;
+
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @include hover-effects;
+
+  &::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    line-height: 28px;
+    transform: translateY(-50%);
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: $primary-color;
+    border-radius: 30%;
+  }
+}
+
+.visit__text {
+  font-family: $third-font-family;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.visit__action {
+  position: relative;
+  width: 40%;
+
+  &::after {
+    top: 10px;
+    right: 0;
+    @include set-icon(url("../img/icons/telegram.png"), 15px, 16px)
+  }
+}
+
+.visit__input {
+  width: 100%;
+  padding: 5px;
+  padding-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.visit__input::-webkit-input-placeholder {color:#ffffff; font-size: 18px; font-weight: 300;}
+.visit__input::-moz-placeholder          {color:#ffffff; font-size: 18px; font-weight: 300;}
+.visit__input:-moz-placeholder           {color:#ffffff; font-size: 18px; font-weight: 300;}
+.visit__input:-ms-input-placeholder      {color:#ffffff; font-size: 18px; font-weight: 300;}

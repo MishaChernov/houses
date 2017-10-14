@@ -1,0 +1,169 @@
+.description {
+
+}
+
+.description__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0;
+  margin-bottom: 40px;
+
+}
+
+.description__item {
+  position: relative;
+  display: block;
+  width: 170px;
+  margin: 5px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  text-align: left;
+  color: #556878;
+  font-size: 15px;
+  font-weight: 700;
+
+  &::before {
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+
+    @include set-icon(url("../img/icons/check.png"), 22px, 22px);
+  }
+
+  &--disabled {
+    &::before {
+        @include set-icon(url("../img/icons/disabled.png"), 22px, 22px);
+    }
+  }
+}
+
+.description__wrapper--places {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 30px;
+}
+
+.description__places {
+  position: relative;
+  display: block;
+  width: 220px;
+  box-sizing: border-box;
+  border: 1px solid #ededed;
+  padding-right: 20px;
+  margin: 5px 5px;
+
+  &::after {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3px;
+
+    @include set-icon(url("../img/css_sprites.png"), 16px, 16px);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &--car {
+    &::after {
+      top: 15px;
+      right: 4px;
+      background-position: -10px -53px;
+    }
+  }
+  &--velo {
+    &::after {
+      top: 16px;
+      right: 4px;
+      width: 18px;
+      background-position: -45px -53px;
+    }
+  }
+  &--man {
+    &::after {
+      top: 13px;
+      right: 1px;
+      background-position: -10px -117px;
+    }
+  }
+  &--bus {
+    &::after {
+      background-position: -10px -86px;
+    }
+  }
+}
+
+.description__title {
+  width: 100%;
+}
+
+.description__place {
+  font-size: 14px;
+  width: 122px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-right: 1px solid #ededed;
+}
+
+.description__minutes {
+  display: inline-block;
+  width: 51px;
+  border-right: 1px solid #ededed;
+  padding-right: 5px;
+}
+
+@media (min-width: 350px) {
+  .description__minutes {
+    width: 55px;
+  }
+  .description__places {
+    position: relative;
+    display: block;
+    width: 220px;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    padding-right: 20px;
+    margin: 5px 5px;
+
+    &::after {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 7px;
+
+      @include set-icon(url("../img/css_sprites.png"), 16px, 16px);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &--car {
+      &::after {
+        top: 15px;
+        right: 7px;
+        background-position: -10px -53px;
+      }
+    }
+    &--velo {
+      &::after {
+        top: 16px;
+        right: 7px;
+        width: 18px;
+        background-position: -45px -53px;
+      }
+    }
+    &--man {
+      &::after {
+        top: 13px;
+        right: 4px;
+        background-position: -10px -117px;
+      }
+    }
+    &--bus {
+      &::after {
+        background-position: -10px -86px;
+      }
+    }
+  }
+}

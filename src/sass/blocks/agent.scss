@@ -1,0 +1,27 @@
+.agent {
+
+}
+
+.agent__wrapper {
+  margin-top: 10px;
+}
+
+.agent__btn {
+  display: block;
+  color: #ffffff;
+  background: none;
+  background-color: #4fba6f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  @include hover-effects;
+}
+
+.agent__stars {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}

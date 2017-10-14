@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="css/style-min.css";
 </head>
 <body>
+  <svg style="display:none">
+    <symbol viewBox="0 0 512 512" id="map-flag">
+      <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+  			c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+  			c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+    </symbol>
+  </svg>
   <header class="page-header">
     <div class="page-header__wrapper-top">
       <div class="social-icons  container">
@@ -70,7 +77,7 @@
 
     <section class="slides">
       <div class="slides__wrapper  container">
-        <img class="slides__img" src="img/slides-img-1.jpg" alt="img description 1" width="205" height="132">
+        <img class="slides__img  slides__img--active" src="img/slides-img-1.jpg" alt="img description 1" width="205" height="132">
         <img class="slides__img" src="img/slides-img-2.jpg" alt="img description 2" width="205" height="132">
         <img class="slides__img" src="img/slides-img-3.jpg" alt="img description 3" width="205" height="132">
         <img class="slides__img" src="img/slides-img-4.jpg" alt="img description 4" width="205" height="132">
@@ -78,307 +85,333 @@
       </div>
     </section>
 
-    <div class="container">
-      <div class="main-content  col-md-8">
-        <table class="details">
-          <tr class="details__tr">
-            <td class="details__td">Years of Build</td>
+    <div class="page-main__wrapper  container">
+      <div class="row">
+        <div class="main-content  col-md-8">
 
-            <td class="details__td">Square fieeet</td>
+          <ul class="details__list  col-md-12">
+            <li class="details__item  details__item--build  col-md-3">
+              <span class="details__item-text">Years of Build</span><br>
+              <span class="details__item-text  details__item-text--size">2006</span>
+            </li>
+            <li class="details__item  details__item--feet  col-md-3">
+              <span class="details__item-text">Square Feet</span><br>
+              <span class="details__item-text  details__item-text--size">2222</span>
+            </li>
+            <li class="details__item  details__item--rooms  col-md-3">
+              <span class="details__item-text">Rooms</span><br>
+              <span class="details__item-text  details__item-text--size">4</span>
+            </li>
+            <li class="details__item  details__item--garage  col-md-3">
+              <span class="details__item-text">Garage</span><br>
+              <span class="details__item-text  details__item-text--size">1</span>
+            </li>
+          </ul>
 
-            <td class="details__td">Rooms</td>
-
-            <td class="details__td">Garage</td>
-          </tr>
-
-          <tr class="details__tr">
-            <td class="details__td">2006</td>
-
-            <td class="details__td">2222</td>
-
-            <td class="details__td">4</td>
-
-            <td class="details__td">1</td>
-          </tr>
-        </table>
-
-        <section class="description">
-          <article class="description__wrapper">
-            <h2 class="description__title  title">Desctiption</h2>
-            <p class="description__text">
-              Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Sed fermentum, lorem vitae efficitur imperdiet, neque velit tristique turpis, et iaculis mi tortor finibus turpis.
-            </p>
-          </article>
-
-          <article class="description__wrapper">
-            <h2 class="description__title  title">Amenities</h2>
-
-            <ul class="description__list">
-              <li class="description__item">Balcony</li>
-              <li class="description__item">Cable TV</li>
-              <li class="description__item">Deck</li>
-              <li class="description__item">Dishwasher</li>
-              <li class="description__item">Heating</li>
-              <li class="description__item  description__item--disabled">Internet</li>
-              <li class="description__item">Parking</li>
-              <li class="description__item">Pool</li>
-              <li class="description__item">Oven</li>
-              <li class="description__item  description__item--disabled">Gym</li>
-              <li class="description__item">Laundry Room</li>
-            </ul>
-          </article>
-
-          <article class="description__wrapper">
-            <h2 class="description__title  title">Nearby Places</h2>
-
-            <div class="description__places">
-              <h3 class="description__place">Shopping Center</h3>
-              <span class="description__minutes">10 min</span>
-            </div>
-
-            <div class="description__places">
-              <h3 class="description__place">School</h3>
-              <span class="description__minutes">5 min</span>
-            </div>
-
-            <div class="description__places">
-              <h3 class="description__place">City Center</h3>
-              <span class="description__minutes">20 min</span>
-            </div>
-
-            <div class="description__places">
-              <h3 class="description__place">Bus Station</h3>
-              <span class="description__minutes">2 min</span>
-            </div>
-
-            <div class="description__places">
-              <h3 class="description__place">Hospital</h3>
-              <span class="description__minutes">15 min</span>
-            </div>
-
-            <div class="description__places">
-              <h3 class="description__place">Airport</h3>
-              <span class="description__minutes">20 min</span>
-            </div>
-          </article>
-        </section>
-
-        <section class="schools">
-          <h2 class="schools__title  title">Nearby Schools</h2>
-
-          <div class="schools__wrapper">
-            <article class="schools__item">
-              <h3 class="schools__subtitle">Lorem Ipsum School</h3>
-
-              <table class="schools__table">
-                <tr class="schools__tr">
-                  <td class="schools__td">Distance: </td>
-                  <td class="schools__td">0.5 mi</td>
-                </tr>
-                <tr class="schools__tr">
-                  <td class="schools__td">Rating: </td>
-                  <td class="schools__td">5/10</td>
-                </tr>
-                <tr class="schools__tr">
-                  <td class="schools__td">Grades: </td>
-                  <td class="schools__td">PK-5</td>
-                </tr>
-              </table>
+          <section class="description  block-style  col-md-12">
+            <article class="description__wrapper">
+              <h2 class="description__title  title">Desctiption</h2>
+              <p class="description__text">
+                Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Sed fermentum, lorem vitae efficitur imperdiet, neque velit tristique turpis, et iaculis mi tortor finibus turpis.
+              </p>
             </article>
 
-            <article class="schools__item">
-              <h3 class="schools__subtitle">Lorem Ipsum School</h3>
+            <article class="description__wrapper">
+              <h2 class="description__title  title">Amenities</h2>
 
-              <table class="schools__table">
-                <tr class="schools__tr">
-                  <td class="schools__td">Distance: </td>
-                  <td class="schools__td">0.5 mi</td>
-                </tr>
-                <tr class="schools__tr">
-                  <td class="schools__td">Rating: </td>
-                  <td class="schools__td">5/10</td>
-                </tr>
-                <tr class="schools__tr">
-                  <td class="schools__td">Grades: </td>
-                  <td class="schools__td">PK-5</td>
-                </tr>
-              </table>
+              <ul class="description__list">
+                <li class="description__item">Balcony</li>
+                <li class="description__item">Cable TV</li>
+                <li class="description__item">Deck</li>
+                <li class="description__item">Dishwasher</li>
+                <li class="description__item">Heating</li>
+                <li class="description__item  description__item--disabled">Internet</li>
+                <li class="description__item">Parking</li>
+                <li class="description__item">Pool</li>
+                <li class="description__item">Oven</li>
+                <li class="description__item  description__item--disabled">Gym</li>
+                <li class="description__item">Laundry Room</li>
+              </ul>
             </article>
 
-            <article class="schools__item">
-              <h3 class="schools__subtitle">Lorem Ipsum School</h3>
+            <article class="description__wrapper  description__wrapper--places">
+              <h2 class="description__title  title">Nearby Places</h2>
 
-              <table class="schools__table">
-                <tr class="schools__tr">
-                  <td class="schools__td">Distance: </td>
-                  <td class="schools__td">0.5 mi</td>
-                </tr>
-                <tr class="schools__tr">
-                  <td class="schools__td">Rating: </td>
-                  <td class="schools__td">5/10</td>
-                </tr>
-                <tr class="schools__tr">
-                  <td class="schools__td">Grades: </td>
-                  <td class="schools__td">PK-5</td>
-                </tr>
-              </table>
+              <div class="description__places  description__places--car">
+                <h3 class="description__place">Shopping Center</h3>
+                <span class="description__minutes">10 min</span>
+              </div>
+
+              <div class="description__places  description__places--car">
+                <h3 class="description__place">School</h3>
+                <span class="description__minutes">5 min</span>
+              </div>
+
+              <div class="description__places  description__places--velo">
+                <h3 class="description__place">City Center</h3>
+                <span class="description__minutes">20 min</span>
+              </div>
+
+              <div class="description__places  description__places--man">
+                <h3 class="description__place">Bus Station</h3>
+                <span class="description__minutes">2 min</span>
+              </div>
+
+              <div class="description__places  description__places--bus">
+                <h3 class="description__place">Hospital</h3>
+                <span class="description__minutes">15 min</span>
+              </div>
+
+              <div class="description__places  description__places--bus">
+                <h3 class="description__place">Airport</h3>
+                <span class="description__minutes">20 min</span>
+              </div>
             </article>
-          </div>
+          </section>
 
-          <div class="schools__map">
-            <button class="schools__marker">Play</button>
-            <button class="schools__marker">Play</button>
-            <button class="schools__marker">Play</button>
-          </div>
-        </section>
+          <section class="schools  block-style  col-md-12">
+            <h2 class="schools__title  title">Nearby Schools</h2>
 
-        <section class="video">
-          <h2 class="video__title  title">Video</h2>
+            <div class="schools__wrapper  col-md-6">
+              <article class="schools__item">
+                <svg class="map-flag  map-flag--blue" width="35" height="51">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
 
-          <div class="video__block">
-            <button class="video__btn">Play</button>
-          </div>
-        </section>
+                <h3 class="schools__subtitle">Lorem Ipsum School</h3>
 
-        <section class="location">
-          <h2 class="location__title  title">location</h2>
+                <table class="schools__table">
+                  <tr class="schools__tr">
+                    <td class="schools__td">Distance: </td>
+                    <td class="schools__td">0.5 mi</td>
+                  </tr>
+                  <tr class="schools__tr">
+                    <td class="schools__td">Rating: </td>
+                    <td class="schools__td">5/10</td>
+                  </tr>
+                  <tr class="schools__tr">
+                    <td class="schools__td">Grades: </td>
+                    <td class="schools__td">PK-5</td>
+                  </tr>
+                </table>
+              </article>
 
-          <div class="location__block">
-            <button class="location__marker">Play</button>
-          </div>
-        </section>
+              <article class="schools__item">
+                <svg class="map-flag  map-flag--green" width="35" height="51">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
+
+
+                <h3 class="schools__subtitle">Lorem Ipsum School</h3>
+
+                <table class="schools__table">
+                  <tr class="schools__tr">
+                    <td class="schools__td">Distance: </td>
+                    <td class="schools__td">0.5 mi</td>
+                  </tr>
+                  <tr class="schools__tr">
+                    <td class="schools__td">Rating: </td>
+                    <td class="schools__td">5/10</td>
+                  </tr>
+                  <tr class="schools__tr">
+                    <td class="schools__td">Grades: </td>
+                    <td class="schools__td">PK-5</td>
+                  </tr>
+                </table>
+              </article>
+
+              <article class="schools__item">
+                <svg class="map-flag  map-flag--black" width="35" height="51">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
+
+
+                <h3 class="schools__subtitle">Lorem Ipsum School</h3>
+
+                <table class="schools__table">
+                  <tr class="schools__tr">
+                    <td class="schools__td">Distance: </td>
+                    <td class="schools__td">0.5 mi</td>
+                  </tr>
+                  <tr class="schools__tr">
+                    <td class="schools__td">Rating: </td>
+                    <td class="schools__td">5/10</td>
+                  </tr>
+                  <tr class="schools__tr">
+                    <td class="schools__td">Grades: </td>
+                    <td class="schools__td">PK-5</td>
+                  </tr>
+                </table>
+              </article>
+            </div>
+
+            <div class="schools__map  col-md-6">
+              <button class="schools__marker  schools__marker--blue">
+                <svg class="map-flag  map-flag--blue" width="35" height="51">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
+              </button>
+              <button class="schools__marker  schools__marker--green">
+                <svg class="map-flag  map-flag--green" width="35" height="51">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
+              </button>
+              <button class="schools__marker  schools__marker--black">
+                <svg class="map-flag  map-flag--black" width="35" height="51">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+
+          <section class="video  block-style  col-md-12">
+            <h2 class="video__title  title">Video</h2>
+
+            <div class="video__block">
+              <button class="video__btn">Play</button>
+            </div>
+          </section>
+
+          <section class="location  block-style  col-md-12">
+            <h2 class="location__title  title">location</h2>
+
+            <div class="location__block">
+              <button class="location__marker">Play</button>
+            </div>
+          </section>
+        </div>
+
+        <aside class="aside  col-md-4">
+          <section class="agent  block-style">
+            <h2 class="agent__title  title">Agent Details</h2>
+
+            <div class="agent__details">
+              <div class="agent__wrapper  agent__wrapper--left  col-md-6">
+                <img class="agent__img" src="img/agent-img.png" alt="Jogn Doe" width="125" height="125">
+                <button class="agent__btn">68 Properties</button>
+
+                <ul class="agent__stars">
+                  <li class="agent__star">1</li>
+                  <li class="agent__star">2</li>
+                  <li class="agent__star">3</li>
+                  <li class="agent__star">4</li>
+                  <li class="agent__star">5</li>
+                </ul>
+              </div>
+
+              <div class="agent__wrapper  agent__wrapper--right  col-md-6">
+                <h3 class="agent__name">John Doe</h3>
+
+                <ul class="agent__info">
+                  <li class="agent__info-item  agent__info-item--stick">Buying Agent</li>
+                  <li class="agent__info-item  agent__info-item--email">agent@mail.com</li>
+                  <li class="agent__info-item  agent__info-item--phone">(123) 456-6789</li>
+                </ul>
+
+                <div class="social-icons  social-icons--agent">
+                  <a class="social-icon  social-icon--facebook" href="#">Facebook</a>
+                  <a class="social-icon  social-icon--instagram" href="#">Instagram</a>
+                  <a class="social-icon  social-icon--twitter" href="#">Twitter</a>
+                  <a class="social-icon  social-icon--google" href="#">Google Plus</a>
+                  <a class="social-icon  social-icon--youtube" href="#">YouTube</a>
+                  <a class="social-icon  social-icon--indellin" href="#">Indellin</a>
+                </div>
+
+                <p class="agent__rating">Rating: <span class="agent__rating-number">5.0/5.0</span></p>
+              </div>
+            </div>
+
+            <form class="agent__form" action="/">
+              <input class="agent__input" type="text" name="name" required placeholder="Name">
+              <input class="agent__input" type="text" name="email" required placeholder="Email">
+              <textarea class="agent__input  agent__input--textarea" name="message" required placeholder="Message"></textarea>
+
+              <input class="agent__submit" type="submit" name="Send" value="Send Message">
+            </form>
+          </section>
+
+          <section class="calculator  block-style">
+            <header class="calculator__header">
+              <h2 class="calculator__title  title">Mortage Calculator</h2>
+            </header>
+            <main class="calculator__main">
+              <form class="calculator__form" action="/">
+                <label class="calculator__label">
+                  <span class="calculator__label-title">Purchase Price</span>
+                  <input class="calculator__input" type="text" name="price" placeholder="$ 1,000,000">
+                </label>
+
+                <div class="calculator__form-labels">
+                  <label class="calculator__label">
+                    <span class="calculator__label-title">Down Payment</span>
+                    <select class="calculator__input  calculator__input--select" name="payment">
+                      <option class="calculator__option" value="$ 200,000">$ 200,000</option>
+                      <option class="calculator__option" value="$ 100,000">$ 100,000</option>
+                      <option class="calculator__option" value="$ 50,000">$ 50,000</option>
+                    </select>
+                  </label>
+
+                  <label class="calculator__label">
+                    <input class="calculator__input  calculator__input--procent" type="text" name="Procent" placeholder="20">
+                  </label>
+                </div>
+
+                <label class="calculator__label">
+                  <span class="calculator__label-title">Loan Tern</span>
+                  <input class="calculator__input  calculator__input--tern" type="text" name="tern" placeholder="180">
+                </label>
+
+                <label class="calculator__label">
+                  <span class="calculator__label-title">Interest Rate</span>
+                  <input class="calculator__input  calculator__input--rate" type="text" name="rate" placeholder="4.000">
+                </label>
+
+                <div class="calculator__labels">
+                  <span class="calculator__label-title">Include taxes/insurance</span>
+                  <label class="calculator__label">
+                    <input class="calculator__checkbox" type="checkbox" name="Yes">
+                    <span class="calculator__label-text">Yes</span>
+                  </label>
+
+                  <label class="calculator__label">
+                    <input class="calculator__checkbox" type="checkbox" name="No">
+                    <span class="calculator__label-text">No</span>
+                  </label>
+                </div>
+
+                <div class="calculator__form-labels">
+                  <span class="calculator__label-title">Property Tax</span>
+                  <label class="calculator__label">
+                    <input class="calculator__input  calculator__input--tax" type="text" name="Tax" placeholder="$15,000">
+                  </label>
+
+                  <label class="calculator__label">
+                    <input class="calculator__input  calculator__input--procent" type="text" name="Procent-Tax" placeholder="1.5">
+                  </label>
+                </div>
+
+                <label class="calculator__label">
+                  <span class="calculator__label-title">Insurance</span>
+                  <input class="calculator__input  calculator__input--procent" type="text" name="Procent-Tax" placeholder="$ 1,000">
+                </label>
+
+                <input class="calculator__submit" type="submit">
+              </form>
+            </main>
+
+            <footer class="calculator__footer">
+              <p class="calculator__text">You estimated monthly payment</p>
+
+              <p class="calculator__totalsum">$ 7,251</p>
+            </footer>
+          </section>
+        </aside>
       </div>
 
-      <aside class="aside  col-md-3  col-md-offset-1">
-        <section class="agent">
-          <h2 class="agent__title  title">agent Details</h2>
-
-          <div class="agent__details">
-            <div class="agent__wrapper  agent__wrapper--left">
-              <img class="agent__img" src="img/agent-img.png" alt="Jogn Doe" width="125" height="125">
-              <button class="agent__btn">68 Properties</button>
-
-              <ul class="agent__stars">
-                <li class="agent__star">1</li>
-                <li class="agent__star">2</li>
-                <li class="agent__star">3</li>
-                <li class="agent__star">4</li>
-                <li class="agent__star">5</li>
-              </ul>
-            </div>
-
-            <div class="agent__wrapper  agent__wrapper--right">
-              <h3 class="agent__name">John Doe</h3>
-
-              <ul class="agent__info">
-                <li class="agent__info-item  agent__info-item--stick">Buying Agent</li>
-                <li class="agent__info-item  agent__info-item--email">agent@mail.com</li>
-                <li class="agent__info-item  agent__info-item--phone">(123) 456-6789</li>
-              </ul>
-
-              <div class="social-icons  social-icons--agent">
-                <a class="social-icon  social-icon--facebook" href="#">Facebook</a>
-                <a class="social-icon  social-icon--instagram" href="#">Instagram</a>
-                <a class="social-icon  social-icon--twitter" href="#">Twitter</a>
-                <a class="social-icon  social-icon--google" href="#">Google Plus</a>
-                <a class="social-icon  social-icon--youTube" href="#">YouTube</a>
-                <a class="social-icon  social-icon--indellin" href="#">Indellin</a>
-              </div>
-
-              <p class="agent__rating">Rating: <span class="agent__rating-number">5.0/5.0</span></p>
-            </div>
-          </div>
-
-          <form class="agent__form" action="/">
-            <input class="agent__input" type="text" name="name" required placeholder="Name">
-            <input class="agent__input" type="text" name="email" required placeholder="Email">
-            <textarea class="agent__input  agent__input--textarea" name="message" required placeholder="Message"></textarea>
-
-            <input class="agent__submit" type="submit" name="Send" value="Send Message">
-          </form>
-        </section>
-
-        <section class="calculator">
-          <header class="calculator__header">
-            <h2 class="calculator__title  title">Mortage Calculator</h2>
-          </header>
-          <main class="calculator__main">
-            <form class="calculator__form" action="/">
-              <label class="calculator__label">
-                <span class="calculator__label-title">Purchase Price</span>
-                <input class="calculator__input" type="text" name="price" placeholder="$ 1,000,000">
-              </label>
-
-              <div class="calculator__form-labels">
-                <label class="calculator__label">
-                  <span class="calculator__label-title">Down Payment</span>
-                  <select class="calculator__input  calculator__input--select" name="payment">
-                    <option class="calculator__option" value="$ 200,000">$ 200,000</option>
-                    <option class="calculator__option" value="$ 100,000">$ 100,000</option>
-                    <option class="calculator__option" value="$ 50,000">$ 50,000</option>
-                  </select>
-                </label>
-
-                <label class="calculator__label">
-                  <input class="calculator__input  calculator__input--procent" type="text" name="Procent" placeholder="20">
-                </label>
-              </div>
-
-              <label class="calculator__label">
-                <span class="calculator__label-title">Loan Tern</span>
-                <input class="calculator__input  calculator__input--tern" type="text" name="tern" placeholder="180">
-              </label>
-
-              <label class="calculator__label">
-                <span class="calculator__label-title">Interest Rate</span>
-                <input class="calculator__input  calculator__input--rate" type="text" name="rate" placeholder="4.000">
-              </label>
-
-              <div class="calculator__labels">
-                <span class="calculator__label-title">Include taxes/insurance</span>
-                <label class="calculator__label">
-                  <input class="calculator__checkbox" type="checkbox" name="Yes">
-                  <span class="calculator__label-text">Yes</span>
-                </label>
-
-                <label class="calculator__label">
-                  <input class="calculator__checkbox" type="checkbox" name="No">
-                  <span class="calculator__label-text">No</span>
-                </label>
-              </div>
-
-              <div class="calculator__form-labels">
-                <span class="calculator__label-title">Property Tax</span>
-                <label class="calculator__label">
-                  <input class="calculator__input  calculator__input--tax" type="text" name="Tax" placeholder="$15,000">
-                </label>
-
-                <label class="calculator__label">
-                  <input class="calculator__input  calculator__input--procent" type="text" name="Procent-Tax" placeholder="1.5">
-                </label>
-              </div>
-
-              <label class="calculator__label">
-                <span class="calculator__label-title">Insurance</span>
-                <input class="calculator__input  calculator__input--procent" type="text" name="Procent-Tax" placeholder="$ 1,000">
-              </label>
-
-              <input class="calculator__submit" type="submit">
-            </form>
-          </main>
-
-          <footer class="calculator__footer">
-            <p class="calculator__text">You estimated monthly payment</p>
-
-            <p class="calculator__totalsum">$ 7,251</p>
-          </footer>
-        </section>
-      </aside>
-
-      <section class="meeting">
-        <div class="meeting__content">
-          <h2 class="meeting__title  title">Meet the agent</h2>
-          <section class="agent">
+      <section class="meeting  block-style  col-md-12">
+        <div class="meeting__content  col-md-8">
+          <h2 class="meeting__title  title  col-md-12">Meet the agent</h2>
+          <section class="agent  col-md-12">
             <div class="agent__details">
               <div class="agent__wrapper  agent__wrapper--left">
                 <img class="agent__img" src="img/agent-img.png" alt="Jogn Doe" width="125" height="125">
@@ -418,55 +451,52 @@
                 <p class="agent__rating">Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Sed fermentum, lorem vitae efficitur imperdiet, neque velit tristique turpis, et iaculis mi tortor finibus turpis.</p>
               </div>
             </div>
-          </div>
-
-          <div class="video  video--agent">
-            <div class="video__block">
-              <button class="video__btn">Play</button>
+            <div class="video  video--agent  col-md-12">
+              <div class="video__block">
+                <button class="video__btn">Play</button>
+              </div>
             </div>
-          </div>
+            <div class="feedback  col-md-12">
+              <h3 class="feedback__title">3 Feedback</h3>
 
-          <div class="feedback">
-            <h3 class="feedback__title">3 Feedback</h3>
+              <div class="feedback__item">
+                <h4 class="feedback__name">Michael Salmon</h4>
+                <cite class="feedback__date">4 days ago</cite>
+                <blockquote class="feedback__text">
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                 sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                 volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                 suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+              </div>
 
-            <div class="feedback__item">
-              <h4 class="feedback__name">Michael Salmon</h4>
-              <cite class="feedback__date">4 days ago</cite>
-              <blockquote class="feedback__text">
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-               sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
-               volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
-               suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              </blockquote>
+              <div class="feedback__item">
+                <h4 class="feedback__name">Michael Salmon</h4>
+                <cite class="feedback__date">4 days ago</cite>
+                <blockquote class="feedback__text">
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                 sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                 volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                 suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+              </div>
+
+              <div class="feedback__item">
+                <h4 class="feedback__name">Michael Salmon</h4>
+                <cite class="feedback__date">4 days ago</cite>
+                <blockquote class="feedback__text">
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                 sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                 volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                 suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                </blockquote>
+              </div>
+
+              <button class="feedback__btn">Show More</button>
             </div>
-
-            <div class="feedback__item">
-              <h4 class="feedback__name">Michael Salmon</h4>
-              <cite class="feedback__date">4 days ago</cite>
-              <blockquote class="feedback__text">
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-               sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
-               volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
-               suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              </blockquote>
-            </div>
-
-            <div class="feedback__item">
-              <h4 class="feedback__name">Michael Salmon</h4>
-              <cite class="feedback__date">4 days ago</cite>
-              <blockquote class="feedback__text">
-               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-               sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
-               volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
-               suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-              </blockquote>
-            </div>
-
-            <button class="feedback__btn">Show More</button>
-          </div>
-        </section>
-
-        <aside class="more-info">
+          </section>
+        </div>
+        <aside class="more-info  col-md-3">
           <h2 class="more-info__title  title">More from agent</h2>
 
           <div class="more-info__item">
@@ -515,29 +545,32 @@
             </div>
           </div>
         </aside>
+      </section>
       </div>
 
-      <section class="visit">
+      <section class="visit  col-md-12">
         <button class="visit__btn">Schedule visit</button>
-        <p class="visit__btn">Get new properties from agent by entering your email here</p>
+        <div class="visit__wrapper  container">
+          <p class="visit__text">Get new properties from agent by entering your email here</p>
 
-        <form class="visit__action" action="/">
-          <input class="visit__input" type="text" placeholder="Your email...">
-        </form>
+          <form class="visit__action" action="/">
+            <input class="visit__input" type="text" placeholder="Your email...">
+          </form>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper  container">
         <a class="logo  logo--footer" href="#">Logo Here</a>
-        <p class="page-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sed aut ad pariatur voluptate qui nemo mollitia iure nulla ipsa ab accusantium accusamus unde saepe deleniti quam, velit perspiciatis officia.</p>
+        <p class="page-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sed aut ad pariatur voluptate qui nemo mollitia iure nulla ipsa.</p>
 
-        <div class="social-icons">
+        <div class="social-icons  social-icons--footer">
           <a class="social-icon  social-icon--facebook" href="#">Facebook</a>
           <a class="social-icon  social-icon--instagram" href="#">Instagram</a>
           <a class="social-icon  social-icon--twitter" href="#">Twitter</a>
           <a class="social-icon  social-icon--google" href="#">Google Plus</a>
-          <a class="social-icon  social-icon--youTube" href="#">YouTube</a>
+          <a class="social-icon  social-icon--youtube" href="#">YouTube</a>
           <a class="social-icon  social-icon--indellin" href="#">Indellin</a>
         </div>
       </div>
