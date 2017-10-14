@@ -4,12 +4,12 @@
 
 .more-info__img {
   width: 100%;
-  max-width: 330px;
+  max-width: 100%;
 }
 
 .more-info__img-wrapper {
   position: relative;
-  max-width: 330px;
+  max-width: 100%;
 }
 
 .more-info__caption {
@@ -173,3 +173,13 @@
 
   @include hover-effects;
 }
+
+// @media (min-width: 992px) {
+//   .more-info__img {
+//     width: 100%;
+//     max-width: 100%;
+//   }
+//   .more-info__img-wrapper {
+//     max-width: 100%;
+//   }
+// }

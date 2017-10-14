@@ -86,3 +86,44 @@
   font-family: $third-font-family;
   font-size: 14px;
 }
+
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+  z-index: 3 !important;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 45px !important;
+  height: 45px !important;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  &::before {
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 45px;
+  }
+}
+
+.slick-next.slick-arrow {
+  right: 15px !important;
+}
+
+.slick-prev.slick-arrow {
+  left: 15px !important;
+}
+
+.slick-current {
+  box-shadow: 0 3px 0 $primary-color;
+  outline: none;
+  filter: brightness(1) !important;
+}

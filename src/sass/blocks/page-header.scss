@@ -43,7 +43,7 @@
     right: 5px;
 
     @include set-icon(url("../img/css_sprites.png"), 30px, 30px);
-    background-position: -88px -10px;
+    background-position: -87px -40px;
   }
 }
 
@@ -63,7 +63,8 @@
 
 .page-header__phone {
   position: relative;
-  margin-left: 40px;
+  margin-left: 60px;
+  padding-right: 30px;
   &::after {
     top: 50%;
     transform: translateY(-50%);
@@ -80,7 +81,6 @@
 
 .page-header__phone-number {
   display: block;
-  padding-right: 30px;
   color: #464646;
   font-weight: 600;
   font-family: $primary-font-family;
