@@ -1,0 +1,78 @@
+.meeting {
+
+}
+.meeting__title {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.meeting .agent {
+  padding: 0;
+}
+
+.meeting .agent__img {
+  transform: scale(1.5);
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.meeting .agent__wrapper {
+  margin-left: 0px;
+
+  &--right {
+    max-width: 280px;
+  }
+  &--left {
+    margin: 0 auto;
+  }
+  &--center {
+    margin: 0 auto;
+  }
+}
+
+.meeting .agent__stars {
+  margin-left: 25px;
+}
+
+@media (min-width: 500px) {
+  .meeting .agent__wrapper {
+
+    &--left {
+
+    }
+    &--center {
+
+    }
+    &--right {
+      min-width: 200px;
+      max-width: 100%;
+    }
+  }
+}
+
+.meeting .video {
+  position: relative;
+}
+
+.meeting .video__btn {
+  z-index: 2;
+}
+
+.meeting .video__block {
+  background-color: #eaeaea;
+  background-image: url("../img/agent-img.png");;
+  background-position: center;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  filter: brightness(75%);
+}
+
+@media (min-width: 767px) {
+  .meeting .agent__wrapper {
+    &--right {
+      min-width: 200px;
+      max-width: 365px;
+    }
+  }
+}

@@ -62,7 +62,7 @@
 
 .visit__action {
   position: relative;
-  width: 40%;
+  width: 90%;
 
   &::after {
     top: 10px;
@@ -86,3 +86,9 @@
 .visit__input::-moz-placeholder          {color:#ffffff; font-size: 18px; font-weight: 300;}
 .visit__input:-moz-placeholder           {color:#ffffff; font-size: 18px; font-weight: 300;}
 .visit__input:-ms-input-placeholder      {color:#ffffff; font-size: 18px; font-weight: 300;}
+
+@media (min-width: 1200px) {
+  .visit__action {
+    width: 40%;
+  }
+}

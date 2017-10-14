@@ -286,7 +286,7 @@
             <h2 class="agent__title  title">Agent Details</h2>
 
             <div class="agent__details">
-              <div class="agent__wrapper  agent__wrapper--left  col-md-6">
+              <div class="agent__wrapper  agent__wrapper--left">
                 <img class="agent__img" src="img/agent-img.png" alt="Jogn Doe" width="125" height="125">
                 <button class="agent__btn">68 Properties</button>
 
@@ -299,7 +299,7 @@
                 </ul>
               </div>
 
-              <div class="agent__wrapper  agent__wrapper--right  col-md-6">
+              <div class="agent__wrapper  agent__wrapper--right">
                 <h3 class="agent__name">John Doe</h3>
 
                 <ul class="agent__info">
@@ -313,11 +313,10 @@
                   <a class="social-icon  social-icon--instagram" href="#">Instagram</a>
                   <a class="social-icon  social-icon--twitter" href="#">Twitter</a>
                   <a class="social-icon  social-icon--google" href="#">Google Plus</a>
-                  <a class="social-icon  social-icon--youtube" href="#">YouTube</a>
                   <a class="social-icon  social-icon--indellin" href="#">Indellin</a>
                 </div>
 
-                <p class="agent__rating">Rating: <span class="agent__rating-number">5.0/5.0</span></p>
+                <p class="agent__rating">Rating: <span class="agent__rating-number"><span>5.0</span>/5.0</span></p>
               </div>
             </div>
 
@@ -342,8 +341,8 @@
                 </label>
 
                 <div class="calculator__form-labels">
-                  <label class="calculator__label">
-                    <span class="calculator__label-title">Down Payment</span>
+                  <span class="calculator__label-title">Down Payment</span>
+                  <label class="calculator__label  calculator__label--width">
                     <select class="calculator__input  calculator__input--select" name="payment">
                       <option class="calculator__option" value="$ 200,000">$ 200,000</option>
                       <option class="calculator__option" value="$ 100,000">$ 100,000</option>
@@ -351,46 +350,46 @@
                     </select>
                   </label>
 
-                  <label class="calculator__label">
+                  <label class="calculator__label  calculator__label--width  calculator__label--procent">
                     <input class="calculator__input  calculator__input--procent" type="text" name="Procent" placeholder="20">
                   </label>
                 </div>
 
-                <label class="calculator__label">
-                  <span class="calculator__label-title">Loan Tern</span>
-                  <input class="calculator__input  calculator__input--tern" type="text" name="tern" placeholder="180">
+                <label class="calculator__label  calculator__label--term">
+                  <span class="calculator__label-title">Loan Term</span>
+                  <input class="calculator__input  calculator__input--term" type="text" name="term" placeholder="180">
                 </label>
 
-                <label class="calculator__label">
+                <label class="calculator__label  calculator__label--rate">
                   <span class="calculator__label-title">Interest Rate</span>
                   <input class="calculator__input  calculator__input--rate" type="text" name="rate" placeholder="4.000">
                 </label>
 
                 <div class="calculator__labels">
                   <span class="calculator__label-title">Include taxes/insurance</span>
-                  <label class="calculator__label">
-                    <input class="calculator__checkbox" type="checkbox" name="Yes">
-                    <span class="calculator__label-text">Yes</span>
+                  <label class="calculator__label  calculator__label--checkbox">
+                    <input class="calculator__checkbox" type="radio" name="radio" value="Yes">
+                    <span class="calculator__label-text  calculator__label-text--checkbox">Yes</span>
                   </label>
 
-                  <label class="calculator__label">
-                    <input class="calculator__checkbox" type="checkbox" name="No">
-                    <span class="calculator__label-text">No</span>
+                  <label class="calculator__label  calculator__label--checkbox">
+                    <input class="calculator__checkbox" type="radio" name="radio" value="No">
+                      <span class="calculator__label-text  calculator__label-text--checkbox">No</span>
                   </label>
                 </div>
 
                 <div class="calculator__form-labels">
                   <span class="calculator__label-title">Property Tax</span>
-                  <label class="calculator__label">
+                  <label class="calculator__label  calculator__label--width  calculator__label--tax">
                     <input class="calculator__input  calculator__input--tax" type="text" name="Tax" placeholder="$15,000">
                   </label>
 
-                  <label class="calculator__label">
+                  <label class="calculator__label  calculator__label--width  calculator__label--procent">
                     <input class="calculator__input  calculator__input--procent" type="text" name="Procent-Tax" placeholder="1.5">
                   </label>
                 </div>
 
-                <label class="calculator__label">
+                <label class="calculator__label  calculator__label--year">
                   <span class="calculator__label-title">Insurance</span>
                   <input class="calculator__input  calculator__input--procent" type="text" name="Procent-Tax" placeholder="$ 1,000">
                 </label>
@@ -409,21 +408,13 @@
       </div>
 
       <section class="meeting  block-style  col-md-12">
-        <div class="meeting__content  col-md-8">
+        <div class="meeting__content  col-md-8  row">
           <h2 class="meeting__title  title  col-md-12">Meet the agent</h2>
           <section class="agent  col-md-12">
             <div class="agent__details">
               <div class="agent__wrapper  agent__wrapper--left">
                 <img class="agent__img" src="img/agent-img.png" alt="Jogn Doe" width="125" height="125">
                 <button class="agent__btn">68 Properties</button>
-
-                <ul class="agent__stars">
-                  <li class="agent__star">1</li>
-                  <li class="agent__star">2</li>
-                  <li class="agent__star">3</li>
-                  <li class="agent__star">4</li>
-                  <li class="agent__star">5</li>
-                </ul>
               </div>
 
               <div class="agent__wrapper  agent__wrapper--center">
@@ -440,11 +431,18 @@
                   <a class="social-icon  social-icon--instagram" href="#">Instagram</a>
                   <a class="social-icon  social-icon--twitter" href="#">Twitter</a>
                   <a class="social-icon  social-icon--google" href="#">Google Plus</a>
-                  <a class="social-icon  social-icon--youTube" href="#">YouTube</a>
                   <a class="social-icon  social-icon--indellin" href="#">Indellin</a>
                 </div>
 
-                <p class="agent__rating">Rating: <span class="agent__rating-number">5.0/5.0</span></p>
+                <ul class="agent__stars">
+                  <li class="agent__star">1</li>
+                  <li class="agent__star">2</li>
+                  <li class="agent__star">3</li>
+                  <li class="agent__star">4</li>
+                  <li class="agent__star">5</li>
+                </ul>
+
+                <p class="agent__rating">Rating: <span class="agent__rating-number"><span>5.0</span>/5.0</span></p>
               </div>
 
               <div class="agent__wrapper  agent__wrapper--right">
@@ -452,8 +450,8 @@
               </div>
             </div>
             <div class="video  video--agent  col-md-12">
+              <button class="video__btn">Play</button>
               <div class="video__block">
-                <button class="video__btn">Play</button>
               </div>
             </div>
             <div class="feedback  col-md-12">
@@ -481,67 +479,72 @@
                 </blockquote>
               </div>
 
-              <div class="feedback__item">
-                <h4 class="feedback__name">Michael Salmon</h4>
-                <cite class="feedback__date">4 days ago</cite>
-                <blockquote class="feedback__text">
-                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                 sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
-                 volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
-                 suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                </blockquote>
-              </div>
-
               <button class="feedback__btn">Show More</button>
             </div>
           </section>
         </div>
-        <aside class="more-info  col-md-3">
+        <aside class="more-info  col-md-4">
           <h2 class="more-info__title  title">More from agent</h2>
 
           <div class="more-info__item">
-            <img class="more-info__img" src="img/more-info-1.jpg" alt="Modern Famoly Home">
+            <div class="more-info__img-wrapper">
+              <img class="more-info__img" src="img/more-info-1.jpg" alt="Modern Famoly Home">
 
-            <div class="more-info__caption">
-              <p class="more-info__price">$150,000</p>
-              <button class="more-info__btn">For Sale</button>
+              <div class="more-info__caption">
+                <p class="more-info__price">$150,000</p>
+                <button class="more-info__btn">For Sale</button>
+              </div>
             </div>
 
             <h3 class="more-info__subtitle">Modern Family Home</h3>
-            <p class="more-info__location">123 Smith Dr, Annapolis, MD</p>
+            <p class="more-info__location">
+              <svg class="map-flag  map-flag--blue" width="9" height="14">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+              </svg>
+              123 Smith Dr, Annapolis, MD
+            </p>
 
             <ul class="more-info__list">
-              <li class="more-info__item">3 Beds</li>
-              <li class="more-info__item">3 Baths</li>
-              <li class="more-info__item">25,000 Sq Ft</li>
+              <li class="more-info__item  more-info__item-list">3 Beds</li>
+              <li class="more-info__item  more-info__item-list">3 Baths</li>
+              <li class="more-info__item  more-info__item-list">25,000 Sq Ft</li>
             </ul>
 
             <div class="more-info__detailse">
               <span class="more-info__detaile-text">5 days ago</span>
               <a class="more-info__link" href="#">See Detailse</a>
+              <a class="more-info__btn-link" href="#"></a>
             </div>
           </div>
 
           <div class="more-info__item">
-            <img class="more-info__img" src="img/more-info-2.jpg" alt="Beautiful Waterfront Condo">
+            <div class="more-info__img-wrapper">
+              <img class="more-info__img" src="img/more-info-2.jpg" alt="Beautiful Waterfront Condo">
 
-            <div class="more-info__caption">
-              <p class="more-info__price">$6,500 <span>Per Month</span></p>
-              <button class="more-info__btn">For Sale</button>
+              <div class="more-info__caption">
+                <p class="more-info__price">$6,500 <span>Per Month</span></p>
+                <button class="more-info__btn">For Sale</button>
+              </div>
             </div>
 
             <h3 class="more-info__subtitle">Beautiful Waterfront Condo</h3>
-            <p class="more-info__location">123 Smith Dr, Annapolis, MD</p>
+            <p class="more-info__location">
+              <svg class="map-flag  map-flag--blue" width="9" height="14">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#map-flag"></use>
+              </svg>
+              123 Smith Dr, Annapolis, MD
+            </p>
 
             <ul class="more-info__list">
-              <li class="more-info__item">3 Beds</li>
-              <li class="more-info__item">3 Baths</li>
-              <li class="more-info__item">25,000 Sq Ft</li>
+              <li class="more-info__item  more-info__item-list">3 Beds</li>
+              <li class="more-info__item  more-info__item-list">3 Baths</li>
+              <li class="more-info__item  more-info__item-list">25,000 Sq Ft</li>
             </ul>
 
             <div class="more-info__detailse">
               <span class="more-info__detaile-text">5 days ago</span>
               <a class="more-info__link" href="#">See Detailse</a>
+              <a class="more-info__btn-link" href="#"></a>
             </div>
           </div>
         </aside>

@@ -1,9 +1,74 @@
 .agent {
+  padding-bottom: 70px;
+}
 
+.agent__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .agent__wrapper {
+  text-align: center;
+  margin: 0 auto;
   margin-top: 10px;
+  max-width: 150px;
+  box-sizing: border-box;
+
+  &--right {
+    margin-top: 0;
+  }
+}
+
+.agent__name {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 18px;
+  color: #3a464e;
+}
+
+.agent__info {
+  text-align: left;
+  margin-left: 45px;
+}
+
+.agent__info-item  {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    display: block;
+    width: 12px;
+    height: 10px;
+    background-image: url("../img/css_sprites.png");
+    background-repeat: no-repeat;
+  }
+  &--stick {
+
+    &::before {
+      background-position: -121px -74px;
+    }
+  }
+  &--email {
+    &::before {
+      background-image: url("../img/email.png");
+      background-repeat: no-repeat;
+      background-size: 12px;
+    }
+  }
+  &--phone {
+    &::before {
+      height: 14px;
+      background-image: url("../img/phone.png");
+      background-repeat: no-repeat;
+      background-size: 13px;
+    }
+  }
 }
 
 .agent__btn {
@@ -24,4 +89,103 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 10px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.agent__star {
+  font-size: 0;
+  display: block;
+  width: 23px;
+  height: 23px;
+  margin: 0 2px;
+
+  background-image: url("../img/css_sprites.png");
+  background-position: -11px -10px;
+  background-repeat: no-repeat;
+}
+
+.social-icons {
+  &--agent {
+    margin-left: 25px;
+    .social-icon {
+      border: 0;
+      margin: 0 5px;
+      width: 12px;
+
+      &--facebook {
+        background-position: -78px -33px;
+      }
+      &--instagram {
+        background-position: -48px -34px;
+      }
+      &--twitter {
+        background-position: -81px -1px;
+      }
+      &--google {
+        background-position: -10px -2px;
+      }
+      &--youtube {
+        background-position: -10px -35px;
+      }
+      &--indellin {
+        background-position:  -48px -3px;
+      }
+    }
+  }
+}
+
+.agent__rating {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.agent__rating-number {
+  text-align: right;
+  padding-left: 25px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.agent__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.agent__input,
+.agent__textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+
+  &--textarea {
+    min-height: 120px;
+    box-sizing: border-box;
+    resize: none;
+  }
+}
+
+.agent__submit {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 3px;
+  background-color: $primary-color;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $secondary-font-family;
+
+  @include hover-effects;
 }
