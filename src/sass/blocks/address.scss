@@ -100,9 +100,9 @@
     width: auto;
     margin-right: 5px;
   }
-  .address__wrapper {
-    padding-bottom: 0;
-  }
+}
+
+@media (min-width: 992px) {
   .address__btn-wrapper {
     position: relative;
     left: 0;
@@ -120,5 +120,8 @@
       transform: translateY(-50%);
       left: -20px;
     }
+  }
+  .address__wrapper {
+    padding-bottom: 0;
   }
 }

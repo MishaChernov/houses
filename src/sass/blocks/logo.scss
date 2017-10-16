@@ -13,6 +13,10 @@
     color: #ffffff;
     margin: 0 auto;
   }
+  &--agent {
+    margin: 0 auto;
+    margin-top: 0px;
+  }
 }
 
 .logo__img {
@@ -27,6 +31,10 @@
     width: 190px;
     &--footer {
       margin: 0 auto;
+    }
+    &--agent {
+      margin: 0 auto;
+      margin-top: 0px;
     }
   }
 }
