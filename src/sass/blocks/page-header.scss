@@ -1,9 +1,13 @@
 .page-header {
   position: relative;
-  background-color: #ffffff;
+  background-color: #ebf1f5;
 }
 
 .page-header__wrapper-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   background-color: #e8ebf3;
   padding-bottom: 5px;
   text-align: right;

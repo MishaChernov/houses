@@ -2,7 +2,7 @@
   z-index: 2;
   position: relative;
   margin: 0 auto;
-  margin-top: -80px;
+  margin-top: -40px;
   bottom: -40px;
   width: 100%;
   padding: 0;
@@ -11,6 +11,7 @@
 }
 
 .address__wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,16 +19,17 @@
   align-content: center;
   width: 100%;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 
 .address__title {
   position: relative;
   font-family: $third-font-family;
   font-weight: 400;
-  margin-left: 68px;
+  margin-left: 45px;
   margin-right: 20px;
   margin-bottom: 25px;
-  font-size: 20px;
+  font-size: 15px;
   margin-right: 0;
 
   &::before {
@@ -36,6 +38,14 @@
     left: -35px;
     @include set-icon(url("../img/pin.png"), 18px, 28px);
   }
+}
+
+.address__btn-wrapper {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 180px;
 }
 
 .address__btn {
@@ -56,6 +66,7 @@
 
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  border-radius: 10px;
 
   @include hover-effects;
   &:hover {
@@ -89,13 +100,20 @@
     width: auto;
     margin-right: 5px;
   }
-  .address__btn {
+  .address__wrapper {
+    padding-bottom: 0;
+  }
+  .address__btn-wrapper {
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    bottom: 0;
     margin-left: auto;
-    padding: 28px 20px;
+  }
+  .address__btn {
+    padding: 28px 10px;
     padding-left: 30px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    margin-right: 0px;
+    border-radius: 0;
 
     &::before {
       top: 50%;

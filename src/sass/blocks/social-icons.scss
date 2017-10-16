@@ -37,9 +37,10 @@
   }
 }
 
-@media (min-width: $width-lg-device) {
+@media (min-width: 500px) {
   .social-icons {
-    margin: 0;
+    margin-left: auto;
+    margin-right: 0;
     text-align: right;
   }
 }
