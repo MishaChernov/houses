@@ -1,18 +1,36 @@
 .logo {
   display: block;
+  width: 100%;
   color: $primary-color;
   font-weight: 700;
   text-decoration: none;
   margin: 0 auto;
 
   font-family: $third-font-family;
-  font-size: 36px;
+  font-size: 0;
   text-transform: uppercase;
   @include hover-effects;
 
   &--footer {
     color: #ffffff;
-    font-size: 24px;
-    width: 150px;
+  }
+}
+
+.logo__img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 557px) {
+  .logo {
+    width: auto;
+  }
+}
+
+@media (min-width: 650px) {
+  .logo {
+    margin-left: 0;
   }
 }

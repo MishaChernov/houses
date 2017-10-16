@@ -5,13 +5,13 @@
 
 .page-header__wrapper-top {
   background-color: #e8ebf3;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-align: right;
 }
 
 .page-header__wrapper {
   display: flex;
-  padding: 28px 0;
+  padding: 10px 0;
   padding-bottom: 60px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -22,6 +22,7 @@
   padding: 10px 10px;
   padding-right: 35px;
   width: 270px;
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid #dedede;
   border-radius: 3px;
@@ -33,10 +34,14 @@
 
 .page-header__search {
   position: relative;
+  display: none;
   vertical-align: middle;
   margin: 0 auto;
-  margin-top: 12px;
   margin-left: auto;
+  margin: 0 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
 
   &::after {
     top: 15px;
@@ -51,6 +56,8 @@
 .page-header__email {
   display: block;
   margin-top: 10px;
+  margin: 0 auto;
+  padding-left: 60px;
 
   &:hover {
     text-decoration: none;
@@ -58,17 +65,12 @@
 }
 
 .page-header__phone {
-  border-right: 1px solid #e6e6e6;
-}
-
-.page-header__phone {
   position: relative;
-  margin-left: 60px;
-  padding-right: 30px;
+
   &::after {
     top: 50%;
     transform: translateY(-50%);
-    left: -50px;
+    left: 10px;
 
     @include set-icon(url("../img/phone.png"), 50px, 50px);
   }
@@ -98,13 +100,49 @@
 
 .page-header__email {
   position: relative;
-  margin-left: 70px;
 
   &::after {
     top: 50%;
     transform: translateY(-50%);
-    left: -60px;
+    left: 10px;
 
     @include set-icon(url("../img/email.png"), 50px, 50px);
+  }
+}
+
+
+@media (min-width: 700px) {
+  .page-header__phone,
+  .page-header__email {
+    width: 30%;
+  }
+  .page-header__search {
+    display: block;
+  }
+}
+
+@media (min-width: 650px) {
+  .page-header__search {
+    width: 50%;
+  }
+}
+
+@media (min-width: $width-lg-device) {
+  .page-header__search {
+    width: 270px;
+  }
+  .page-header__phone,
+  .page-header__email {
+    width: auto;
+  }
+  .page-header__email {
+    margin-left: 0;
+  }
+  .page-header__phone {
+    margin-right: 0;
+  }
+  .page-header__phone {
+    border-right: 1px solid #e6e6e6;
+    padding-right: 20px;
   }
 }
