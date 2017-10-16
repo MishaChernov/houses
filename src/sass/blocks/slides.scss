@@ -17,8 +17,9 @@
   }
 }
 
-.slides__img {
+img.slides__img {
   margin: 10px 5px;
+  height: 132px;
   cursor: pointer;
   filter: brightness(80%);
   @include hover-effects;

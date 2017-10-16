@@ -31,7 +31,7 @@ $('.slides__wrapper').slick({
    {
      breakpoint: 650,
      settings: {
-       slidesToShow: 3,
+       slidesToShow: 2,
        slidesToScroll: 1,
      }
    },
