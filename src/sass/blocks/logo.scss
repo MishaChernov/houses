@@ -11,6 +11,7 @@
 
   &--footer {
     color: #ffffff;
+    margin: 0 auto;
   }
 }
 
@@ -24,5 +25,8 @@
   .logo {
     margin-left: 0;
     width: 190px;
+    &--footer {
+      margin: 0 auto;
+    }
   }
 }

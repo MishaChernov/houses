@@ -1,6 +1,12 @@
 .social-icons {
   margin: 0 auto;
   text-align: center;
+
+  &--footer {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
 .social-icon {
@@ -42,5 +48,10 @@
     margin-left: auto;
     margin-right: 0;
     text-align: right;
+    &--footer {
+      margin: 0 auto;
+      margin-top: 20px;
+      text-align: center;
+    }
   }
 }
