@@ -174,7 +174,11 @@ button.slick-next.slick-arrow {
   .slider__wrapper {
     padding: 15px 0;
   }
+  .slider__number {
+    margin: 0 auto;
+  }
   .slider__text {
     font-size: 14px;
+    margin-right: 0;
   }
 }
