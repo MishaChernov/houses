@@ -16,6 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: inset 0 -115px 200px rgba(0, 0, 0, 1) !important;
 
   &:nth-child(1) {
     background-image: url("../img/slide-1-min.jpg");
@@ -41,34 +42,35 @@
 
 .slider__title {
   font-family: $secondary-font-family;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 500;
   margin: 0;
   margin-bottom: 4px;
   line-height: 37px;
-  span {
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+  text-align: center;
+  // span {
+  //   width: auto;
+  //   background-color: rgba(0, 0, 0, 0.4);
+  // }
 }
 
 .slider__price {
-  text-align: right;
+  text-align: center;
   color: #ffffff;
   font-family: $third-font-family;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   margin-bottom: 10px;
   font-weight: 500;
-  span {
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+  // span {
+  //   width: auto;
+  //   background-color: rgba(0, 0, 0, 0.4);
+  // }
 }
 
 .slider__text {
-  background-color: rgba(0, 0, 0, 0.4);
+  // background-color: rgba(0, 0, 0, 0.4);
   font-weight: 600;
 }
 
@@ -85,7 +87,7 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 15px 0;
+  padding: 5px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -115,7 +117,8 @@
 .slider__text {
   color: #ffffff;
   font-family: $third-font-family;
-  font-size: 14px;
+  font-size: 12px;
+  margin: 5px auto;
 }
 
 button.slick-prev.slick-arrow,
@@ -157,4 +160,21 @@ button.slick-next.slick-arrow {
   box-shadow: 0 3px 0 $primary-color;
   outline: none;
   filter: brightness(1) !important;
+}
+
+@media (min-width: $width-sm-device) {
+  .slider__title {
+    text-align: left;
+    font-size: 30px;
+  }
+  .slider__price {
+    font-size: 30px;
+    text-align: right;
+  }
+  .slider__wrapper {
+    padding: 15px 0;
+  }
+  .slider__text {
+    font-size: 14px;
+  }
 }
